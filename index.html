@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <img class="img" src="http://qdn.135bianjiqi.com/files/users/496/4968986/201903/NGRaSBH6_GpL2.png" alt="">
+</body>
+<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<script>
+    var img=document.querySelector(".img")
+    img.onclick=function(){
+        console.log(22)
+        wx.previewImage({
+                "urls": 'http://qdn.135bianjiqi.com/files/users/496/4968986/201903/NGRaSBH6_GpL2.png',
+                "current": 'http://qdn.135bianjiqi.com/files/users/496/4968986/201903/NGRaSBH6_GpL2.png'
+            });
+    }
+</script>
+</html>
